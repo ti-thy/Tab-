@@ -236,7 +236,13 @@ color: #bbdefb;
 
 /* contact */
 
-.contact p{
+#contact a[href^="mailto:"]{
+    font-weight: 500;
+    color: #64b5f6;
+    transition: all 0.3s
+}
+
+#contact p{
     margin: 1rem 0;
 }
 
@@ -245,6 +251,47 @@ color: #bbdefb;
 font-weight: 500;
 color: #bbdefb;
 }
+
+/* new additions */
+
+/* social icons. only icons, same color */
+
+.social-links{
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+}
+
+.social-icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(100,181,246,0.12);
+    border: 1px solid rgba(100,181,246,0.3);
+    border-radius: 50%;
+    color: #90caf9;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+
+}
+
+.social-icon:hover{
+    background: rgba(100,181,246,0.28);
+    border-color: #64b5f6;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(100,181,246,0.25);
+}
+
 
 /* footer */
 
